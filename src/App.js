@@ -6,7 +6,7 @@ function App() {
   return (
     <React.Fragment>
       <a id="button-right" className="hidden lg:block md:block cursor-pointer mr-12 mt-7 transition duration-200 ease-in-out bg-white border-2 border-black py-2 px-4 rounded-xl float-right hover:bg-black hover:text-white hover:border-black-500" href={Pdf} target="_blank" rel="noreferrer">Resume</a>
-      <iframe id="button-left" className="rounded-xl mr-12 mb-7 invisible lg:visible md:visible" src="https://open.spotify.com/embed/playlist/0m9pe4Sl6Oz5S7ECaoPsV6?utm_source=generator&theme=0" width="15%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+      <iframe title="Spotify Player" id="button-left" className="rounded-xl mr-12 mb-7 invisible lg:visible md:visible" src="https://open.spotify.com/embed/playlist/0m9pe4Sl6Oz5S7ECaoPsV6?utm_source=generator&theme=0" width="15%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
       <div className="flex h-screen font-serif">
         <div className="m-auto">
           <div className="text-center">
