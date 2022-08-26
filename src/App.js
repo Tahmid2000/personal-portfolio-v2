@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Pdf from './Tahmid_Imran_Resume.pdf'
 import { FaGithub, FaLinkedin, FaSpotify, FaEnvelope } from 'react-icons/fa';
-import { MdAlternateEmail } from 'react-icons/md';
+
 function App() {
   return (
     <React.Fragment>
