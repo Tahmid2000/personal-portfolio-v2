@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
 import Pdf from './Tahmid_Imran_Resume.pdf'
-import { FaGithub, FaLinkedin, FaSpotify } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaSpotify, FaEnvelope } from 'react-icons/fa';
+import { MdAlternateEmail } from 'react-icons/md';
 function App() {
   return (
     <React.Fragment>
@@ -16,6 +17,7 @@ function App() {
             <div className="inline-flex text-2xl">
               <a href="https://github.com/Tahmid2000" target="_blank" rel="noreferrer"><FaGithub className="mr-4 ml-4"/></a>
               <a href="https://www.linkedin.com/in/tahmidimran/" target="_blank" rel="noreferrer"><FaLinkedin className="mr-4 ml-4"/></a>
+              <a href="mailto:tahmidimran1@gmail.com" target="_blank" rel="noreferrer"><FaEnvelope className="mr-4 ml-4"/></a>
               <a href="https://open.spotify.com/user/tahmidimran2?si=e5d18fb90ed14920" target="_blank" rel="noreferrer"><FaSpotify className="mr-4 ml-4"/></a>
             </div>
             <div class="flex justify-center">
