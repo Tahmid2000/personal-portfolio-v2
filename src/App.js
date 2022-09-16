@@ -13,12 +13,12 @@ function App() {
           <div className="text-center">
             <h1 className="font-bold text-6xl mb-2">Tahmid Imran</h1>
             <h2 className="text-lg">Master's Computer Science @ <span class="">UT Dallas</span></h2>
-            <h2 className="text-lg mb-4">Incoming Software Engineer @ <span class="">Microsoft</span></h2>
+
             <div className="inline-flex text-2xl">
-              <a href="https://github.com/Tahmid2000" target="_blank" rel="noreferrer"><FaGithub className="mr-4 ml-4"/></a>
-              <a href="https://www.linkedin.com/in/tahmidimran/" target="_blank" rel="noreferrer"><FaLinkedin className="mr-4 ml-4"/></a>
-              <a href="mailto:tahmidimran1@gmail.com" target="_blank" rel="noreferrer"><FaEnvelope className="mr-4 ml-4"/></a>
-              <a href="https://open.spotify.com/user/tahmidimran2?si=e5d18fb90ed14920" target="_blank" rel="noreferrer"><FaSpotify className="mr-4 ml-4"/></a>
+              <a href="https://github.com/Tahmid2000" target="_blank" rel="noreferrer"><FaGithub className="mr-4 ml-4" /></a>
+              <a href="https://www.linkedin.com/in/tahmidimran/" target="_blank" rel="noreferrer"><FaLinkedin className="mr-4 ml-4" /></a>
+              <a href="mailto:tahmidimran1@gmail.com" target="_blank" rel="noreferrer"><FaEnvelope className="mr-4 ml-4" /></a>
+              <a href="https://open.spotify.com/user/tahmidimran2?si=e5d18fb90ed14920" target="_blank" rel="noreferrer"><FaSpotify className="mr-4 ml-4" /></a>
             </div>
             <div class="flex justify-center">
               <a className="cursor-pointer mt-4 transition duration-200 ease-in-out bg-white border-2 border-black py-2 px-4 w-32 rounded-xl hover:bg-black hover:text-white hover:border-black-500 block lg:hidden md:hidden" href={Pdf} target="_blank" rel="noreferrer">Resume</a>
@@ -30,5 +30,5 @@ function App() {
 
   );
 }
-
+// <h2 className="text-lg mb-4">Incoming Software Engineer @ <span class="">Microsoft</span></h2>
 export default App;
