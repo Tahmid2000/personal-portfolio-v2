@@ -13,7 +13,7 @@ function App() {
         target="_blank"
         rel="noreferrer"
       >
-        Résumé
+        Resume
       </a>
       <iframe
         title="Spotify Player"
@@ -71,7 +71,7 @@ function App() {
                 target="_blank"
                 rel="noreferrer"
               >
-                Résumé
+                Resume
               </a>
             </div>
           </div>
