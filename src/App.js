@@ -15,24 +15,12 @@ function App() {
       >
         Resume
       </a>
-      <iframe
-        title="Spotify Player"
-        id="button-left"
-        className="rounded-xl mr-12 mb-7 invisible lg:visible md:visible"
-        src="https://open.spotify.com/embed/playlist/0m9pe4Sl6Oz5S7ECaoPsV6?utm_source=generator&theme=0"
-        width="15%"
-        height="80"
-        frameBorder="0"
-        allowfullscreen=""
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-      ></iframe>
+
       <div className="flex h-screen font-serif">
         <div className="m-auto">
           <div className="text-center">
             <h1 className="font-bold text-6xl mb-2">Tahmid Imran</h1>
-            <h2 className="text-lg mb-4">
-              Master's Computer Science @ <span class="">UT Dallas</span>
-            </h2>
+            <h2 className="text-lg mb-4">Software Engineer</h2>
 
             <div className="inline-flex text-2xl">
               <a
@@ -82,3 +70,15 @@ function App() {
 }
 // <h2 className="text-lg mb-4">Incoming Software Engineer @ <span class="">Microsoft</span></h2>
 export default App;
+
+// <iframe
+//   title="Spotify Player"
+//   id="button-left"
+//   className="rounded-xl mr-12 mb-7 invisible lg:visible md:visible"
+//   src="https://open.spotify.com/embed/playlist/0m9pe4Sl6Oz5S7ECaoPsV6?utm_source=generator&theme=0"
+//   width="15%"
+//   height="80"
+//   frameBorder="0"
+//   allowfullscreen=""
+//   allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+// ></iframe>;
