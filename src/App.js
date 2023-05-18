@@ -1,9 +1,63 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import Pdf from "./Tahmid_Imran_Resume.pdf";
 import { FaGithub, FaLinkedin, FaSpotify, FaEnvelope } from "react-icons/fa";
 
+function WaveText() {
+  const [text, setText] = useState("Tahmid Imran");
+
+  useEffect(() => {
+    const wave = () => {
+      const chars = text.split("");
+      const delays = chars.map((char) => Math.random() * 1000);
+      delays.sort();
+      const startTime = new Date().getTime();
+
+      function animate() {
+        const currentTime = new Date().getTime();
+        const elapsedTime = currentTime - startTime;
+
+        chars.forEach((char, index) => {
+          const position = (elapsedTime - delays[index]) / 20;
+          const offset = Math.sin(position) * 10;
+
+          const charElement = document.getElementById(`char-${index}`);
+          if (charElement) {
+            charElement.style.transform = `translateY(${offset}px)`;
+          }
+        });
+
+        if (elapsedTime < 2000) {
+          requestAnimationFrame(animate);
+        }
+      }
+
+      const container = document.createElement("div");
+      container.style.display = "inline-block";
+      chars.forEach((char, index) => {
+        const charElement = document.createElement("span");
+        charElement.textContent = char;
+        charElement.id = `char-${index}`;
+        container.appendChild(charElement);
+      });
+
+      const mainName = document.getElementById("main-name");
+      if (mainName) {
+        mainName.innerHTML = "";
+        mainName.appendChild(container);
+      }
+
+      setTimeout(() => {
+        animate();
+      }, 100);
+    };
+
+    wave();
+  }, []);
+}
+
 function App() {
+  WaveText();
   return (
     <React.Fragment>
       <a
@@ -19,7 +73,9 @@ function App() {
       <div className="flex h-screen font-serif">
         <div className="m-auto">
           <div className="text-center">
-            <h1 className="font-bold text-6xl mb-2">Tahmid Imran</h1>
+            <h1 className="font-bold text-6xl mb-2" id="main-name">
+              Tahmid Imran
+            </h1>
             <h2 className="text-lg mb-4">Software Engineer</h2>
 
             <div className="inline-flex text-2xl">
