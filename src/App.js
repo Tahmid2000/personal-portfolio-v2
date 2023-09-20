@@ -1,63 +1,63 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./App.css";
 import Pdf from "./Tahmid_Imran_Resume.pdf";
 import { FaGithub, FaLinkedin, FaSpotify, FaEnvelope } from "react-icons/fa";
 
-function WaveText() {
-  const [text, setText] = useState("Tahmid Imran");
+// function WaveText() {
+//   const [text, setText] = useState("Tahmid Imran");
 
-  useEffect(() => {
-    const wave = () => {
-      const chars = text.split("");
-      const delays = chars.map((char) => Math.random() * 1000);
-      delays.sort();
-      const startTime = new Date().getTime();
+//   useEffect(() => {
+//     const wave = () => {
+//       const chars = text.split("");
+//       const delays = chars.map((char) => Math.random() * 1000);
+//       delays.sort();
+//       const startTime = new Date().getTime();
 
-      function animate() {
-        const currentTime = new Date().getTime();
-        const elapsedTime = currentTime - startTime;
+//       function animate() {
+//         const currentTime = new Date().getTime();
+//         const elapsedTime = currentTime - startTime;
 
-        chars.forEach((char, index) => {
-          const position = (elapsedTime - delays[index]) / 20;
-          const offset = Math.sin(position) * 10;
+//         chars.forEach((char, index) => {
+//           const position = (elapsedTime - delays[index]) / 20;
+//           const offset = Math.sin(position) * 10;
 
-          const charElement = document.getElementById(`char-${index}`);
-          if (charElement) {
-            charElement.style.transform = `translateY(${offset}px)`;
-          }
-        });
+//           const charElement = document.getElementById(`char-${index}`);
+//           if (charElement) {
+//             charElement.style.transform = `translateY(${offset}px)`;
+//           }
+//         });
 
-        if (elapsedTime < 2000) {
-          requestAnimationFrame(animate);
-        }
-      }
+//         if (elapsedTime < 2000) {
+//           requestAnimationFrame(animate);
+//         }
+//       }
 
-      const container = document.createElement("div");
-      container.style.display = "inline-block";
-      chars.forEach((char, index) => {
-        const charElement = document.createElement("span");
-        charElement.textContent = char;
-        charElement.id = `char-${index}`;
-        container.appendChild(charElement);
-      });
+//       const container = document.createElement("div");
+//       container.style.display = "inline-block";
+//       chars.forEach((char, index) => {
+//         const charElement = document.createElement("span");
+//         charElement.textContent = char;
+//         charElement.id = `char-${index}`;
+//         container.appendChild(charElement);
+//       });
 
-      const mainName = document.getElementById("main-name");
-      if (mainName) {
-        mainName.innerHTML = "";
-        mainName.appendChild(container);
-      }
+//       const mainName = document.getElementById("main-name");
+//       if (mainName) {
+//         mainName.innerHTML = "";
+//         mainName.appendChild(container);
+//       }
 
-      setTimeout(() => {
-        animate();
-      }, 100);
-    };
+//       setTimeout(() => {
+//         animate();
+//       }, 100);
+//     };
 
-    wave();
-  }, []);
-}
+//     wave();
+//   }, []);
+// }
 
 function App() {
-  WaveText();
+  //WaveText();
   return (
     <React.Fragment>
       <a
