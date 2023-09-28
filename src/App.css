@@ -1,18 +1,32 @@
- #button-right {
-     position: absolute;
-     top: 0;
-     right: 0;
- }
+#button-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 
- #button-left {
-     position: absolute;
-     bottom: 0;
-     right: 0;
- }
+#button-left {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
 
 .iframe-link iframe {
-    display: none;
+  display: none;
 }
 .iframe-link:hover iframe {
-    display: block;
+  display: block;
+}
+
+body {
+  overflow: hidden;
+}
+
+/* Hide only the vertical scroll bar */
+body {
+  overflow-y: hidden;
+}
+
+/* Hide only the horizontal scroll bar */
+body {
+  overflow-x: hidden;
 }
