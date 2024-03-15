@@ -8,14 +8,25 @@ function App() {
   //WaveText();
   return (
     <React.Fragment>
+      {/*
+        <a
+          id="button-right"
+          className="hidden lg:block md:block cursor-pointer mr-12 mt-7 transition duration-200 ease-in-out bg-white border-2 border-black py-2 px-4 rounded-xl float-right hover:bg-black hover:text-white hover:border-black-500 "
+          href={Pdf}
+          target="_blank"
+          rel="noreferrer"
+        >
+          Resume
+        </a>
+  */}
       <a
         id="button-right"
-        className="hidden lg:block md:block cursor-pointer mr-12 mt-7 transition duration-200 ease-in-out bg-white border-2 border-black py-2 px-4 rounded-xl float-right hover:bg-black hover:text-white hover:border-black-500 "
-        href={Pdf}
+        className="cursor-pointer mr-12 mt-7 transition lg:block md:block"
+        href="mailto:tahmidimran1@gmail.com"
         target="_blank"
         rel="noreferrer"
       >
-        Resume
+        @
       </a>
 
       <div className="flex h-screen font-serif mt-16">
@@ -24,9 +35,9 @@ function App() {
             <h1 className="font-bold text-6xl mb-2" id="main-name">
               Tahmid Imran
             </h1>
-            <h2 className="text-lg mb-4">Software Engineer @ Microsoft</h2>
+            <h2 className="text-lg mb-4">Software Engineer at Microsoft</h2>
 
-            <div className="inline-flex text-2xl">
+            {/*<div className="inline-flex text-2xl">
               <a
                 href="https://github.com/Tahmid2000"
                 target="_blank"
@@ -55,8 +66,9 @@ function App() {
               >
                 <FaSpotify className="mr-4 ml-4" />
               </a>
-            </div>
+  </div>*/}
             <div class="flex justify-center">
+              {/*
               <a
                 className="cursor-pointer mt-4 transition duration-200 ease-in-out bg-white border-2 border-black py-2 px-4 w-32 rounded-xl hover:bg-black hover:text-white hover:border-black-500 block lg:hidden md:hidden"
                 href={Pdf}
@@ -65,6 +77,15 @@ function App() {
               >
                 Resume
               </a>
+              <a
+                className="cursor-pointer mt-4 block lg:hidden md:hidden"
+                href="mailto:tahmidimran1@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                @
+              </a>
+              */}
             </div>
             <div className="mt-32" id="age">
               <AgeCounter />
